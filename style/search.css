@@ -1,0 +1,117 @@
+
+.header-menu-modal3 {
+    display: none;
+}
+
+.header-menu-modal3-active {
+    display: block;
+}
+
+.header__search-form {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__search_active {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__search .search__active-input {
+    max-width: 691px;
+    width: 100%;
+    margin-right: 10px;
+    text-align: left;
+    padding-left: 20px;
+    border: 1px solid var(--ligth-gray);
+    height: 42px;
+    line-height: 42px;
+}
+.search-input::placeholder {
+    padding-left: 10px;
+}
+.search__btn {
+    display: none;
+}
+.search__btn_active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 166px;
+    width: 100%;
+    background-color: var(--dark-gray);
+    line-height: 42px;
+    height: 42px;
+}
+
+.header-menu-modal3 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.header-menu-modal3 .header-menu-modal__body-top {
+    width: 100%;
+    padding: 0 15px;
+    border-bottom: none;
+}
+
+.header-menu-modal3 .header-menu-modal__body-top-list3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 28px;
+}
+
+.header-menu-modal3 .header-menu-modal__body-top-list3 .header-menu-modal__body-top-item {
+    width: calc(100% / 3);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header-menu-modal3 .header-menu-modal__body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-result {
+    width: 100%;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1.5px solid var(--5);
+}
+
+.search-result__title {
+    font-family: 'Golos Text SemiBold', sans-serif;
+    font-size: 24px;
+    line-height: 1.25;
+    color: var(--dark-gray);
+    margin-bottom: 15px;
+    padding: 20px 15px;
+}
+
+.search-result__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.search-result__item {
+    padding: 1px 15px;
+    opacity: 0.6;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.1;
+    color: var(--dark-gray);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in;
+}
+
+.search-result__item:hover {
+    background-color: var(--5);
+}

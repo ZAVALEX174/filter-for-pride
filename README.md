@@ -1,1 +1,1 @@
-# filter-for-pride
+# pride
