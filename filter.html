@@ -405,7 +405,7 @@
                 </div>
             </div>
 
-            <div class="widget widget-height__all-height filter-hidden none">
+            <div class="widget widget-height__all-height filter-hidden filter-over-auto none">
                 <div class="widget__body">
                     <div class="filter-title widget__body-title">
                         <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -414,8 +414,125 @@
                         </svg>
                         Типы бурения:
                     </div>
-                    <div class="option">
+                    <div class="option filter-scroll">
                         <div class="option__row">
+                            <label class="option__btn">
+                                <input
+                                        type="checkbox"
+                                        class="option__checkbox-real checkbox-real"
+                                        name="option-01"/>
+                                <span class="option__radio-fake"> </span>
+                                <span class="option__radio-title option__radio-title_selected">
+                                    ГНБ
+                                </span>
+                                <span class="option__radio-count">(5)</span>
+                            </label>
+
+                            <label class="option__btn">
+                                <input
+                                        type="checkbox"
+                                        class="option__checkbox-real checkbox-real"
+                                        name="option-02"/>
+                                <span class="option__radio-fake"> </span>
+                                <span class="option__radio-title">Гидроперфоратор</span>
+                                <span class="option__radio-count">(5)</span>
+                            </label>
+
+                            <label class="option__btn">
+                                <input
+                                        type="checkbox"
+                                        class="option__checkbox-real checkbox-real"
+                                        name="option-03"/>
+                                <span class="option__radio-fake"> </span>
+                                <span class="option__radio-title">Доработка под RC</span>
+                                <span class="option__radio-count">(5)</span>
+                            </label>
+
+                            <label class="option__btn">
+                                <input
+                                        type="checkbox"
+                                        class="option__checkbox-real checkbox-real"
+                                        name="option-01"/>
+                                <span class="option__radio-fake"> </span>
+                                <span class="option__radio-title option__radio-title_selected">
+                                    Доработка под ССК
+                                </span>
+                                <span class="option__radio-count">(5)</span>
+                            </label>
+
+                            <label class="option__btn">
+                                <input
+                                        type="checkbox"
+                                        class="option__checkbox-real checkbox-real"
+                                        name="option-02"/>
+                                <span class="option__radio-fake"> </span>
+                                <span class="option__radio-title">Колонковое</span>
+                                <span class="option__radio-count">(5)</span>
+                            </label>
+
+                            <label class="option__btn">
+                                <input
+                                        type="checkbox"
+                                        class="option__checkbox-real checkbox-real"
+                                        name="option-03"/>
+                                <span class="option__radio-fake"> </span>
+                                <span class="option__radio-title">Пневмоперфоратор</span>
+                                <span class="option__radio-count">(5)</span>
+                            </label>
+
+                            <label class="option__btn">
+                                <input
+                                        type="checkbox"
+                                        class="option__checkbox-real checkbox-real"
+                                        name="option-01"/>
+                                <span class="option__radio-fake"> </span>
+                                <span class="option__radio-title option__radio-title_selected">
+                                   С пневмоударником
+                                </span>
+                                <span class="option__radio-count">(5)</span>
+                            </label>
+
+                            <label class="option__btn">
+                                <input
+                                        type="checkbox"
+                                        class="option__checkbox-real checkbox-real"
+                                        name="option-02"/>
+                                <span class="option__radio-fake"> </span>
+                                <span class="option__radio-title">С продувкой</span>
+                                <span class="option__radio-count">(5)</span>
+                            </label>
+
+                            <label class="option__btn">
+                                <input
+                                        type="checkbox"
+                                        class="option__checkbox-real checkbox-real"
+                                        name="option-03"/>
+                                <span class="option__radio-fake"> </span>
+                                <span class="option__radio-title">С промывкой</span>
+                                <span class="option__radio-count">(5)</span>
+                            </label>
+
+                            <label class="option__btn">
+                                <input
+                                        type="checkbox"
+                                        class="option__checkbox-real checkbox-real"
+                                        name="option-01"/>
+                                <span class="option__radio-fake"> </span>
+                                <span class="option__radio-title option__radio-title_selected">
+                                   Ударно-канатное
+                                </span>
+                                <span class="option__radio-count">(5)</span>
+                            </label>
+
+                            <label class="option__btn">
+                                <input
+                                        type="checkbox"
+                                        class="option__checkbox-real checkbox-real"
+                                        name="option-02"/>
+                                <span class="option__radio-fake"> </span>
+                                <span class="option__radio-title">Шнековое</span>
+                                <span class="option__radio-count">(5)</span>
+                            </label>
                             <label class="option__btn">
                                 <input
                                         type="checkbox"
@@ -540,6 +657,9 @@
         </form>
     </div>
     <button class="btn filter-show-more__btn">Показать</button>
+    <button class="btn hide-filter__btn none">Скрыть фильтр</button>
+    <button class="btn filter-over-auto__btn none">Показать все</button>
+
 </div>
 
 <script src="js/nouislider.min.js" defer></script>

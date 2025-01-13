@@ -14,12 +14,14 @@
     overflow-y: auto;
 
     .filter-title {
+        padding-bottom: 15px;
         font-family: 'Golos Text Medium', sans-serif;
         font-size: 18px;
         font-weight: 500;
         line-height: 22px;
         text-align: left;
         margin-bottom: 20px;
+        border-bottom: 1.50px solid var(--5);
     }
 
     .filter__header {
@@ -738,6 +740,49 @@ input[type=number] {
     background-color: var(--color-orange);
     transition: 0.3s linear;
 }
+
 .filter-show-more__btn:hover {
     background-color: var(--dark-gray);
+}
+
+.hide-filter__btn {
+
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+    outline: none;
+    color: var(--dark-gray);
+    transition: 0.3s linear;
+    padding: 0;
+    max-width: 150px;
+    width: 100%;
+}
+
+.hide-filter__btn:hover {
+    color: var(--color-orange);
+}
+
+.filter-scroll {
+    height: 490px;
+}
+
+.filter-over-auto-scroll {
+    overflow-y: auto;
+}
+
+.filter-over-auto__btn {
+
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+    outline: none;
+    color: var(--dark-gray);
+    transition: 0.3s linear;
+    padding: 0;
+    max-width: 150px;
+    width: 100%;
+}
+
+.filter-over-auto__btn:hover {
+    color: var(--color-orange);
 }
