@@ -30,16 +30,16 @@
         <div class="filter__show-content">
 
             <ul class="filter__show-content-list">
-                <li class="filter__show-content-item">
-                    Глубина бурения (max), м: от 50 до 1 000
+<!--                <li class="filter__show-content-item">-->
+<!--                    Глубина бурения (max), м: от 50 до 1 000-->
 
-                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M24 8L8 24" stroke="#8E8E8E" stroke-width="3" stroke-linecap="round"
-                              stroke-linejoin="round"/>
-                        <path d="M8 8L24 24" stroke="#8E8E8E" stroke-width="3" stroke-linecap="round"
-                              stroke-linejoin="round"/>
-                    </svg>
-                </li>
+<!--                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                        <path d="M24 8L8 24" stroke="#8E8E8E" stroke-width="3" stroke-linecap="round"-->
+<!--                              stroke-linejoin="round"/>-->
+<!--                        <path d="M8 8L24 24" stroke="#8E8E8E" stroke-width="3" stroke-linecap="round"-->
+<!--                              stroke-linejoin="round"/>-->
+<!--                    </svg>-->
+<!--                </li>-->
             </ul>
 
             <div class="filter__show-content-item--counter">
@@ -50,7 +50,7 @@
 
     <!--    тут начало формы-->
     <div class="filter-form filter-form__content">
-        <form action="" class="form-container">
+        <form action="" class="form-container" id="form-container">
             <div class="filter__submit-box">
                 <div class="filter__submit-box__title">
                     Отправить <br> параметры специалисту!
@@ -66,9 +66,9 @@
                         Вид техники:
                     </div>
                     <div class="option">
-                        <div class="option__row">
-                            <label class="option__btn">
-                                <input
+                        <div class="option__row" id="horizontal01">
+                            <label class="option__btn" id="horizontal01-1">
+                                <input checked
                                         type="checkbox"
                                         class="option__checkbox-real checkbox-real"
                                         name="option-01"/>
@@ -79,7 +79,7 @@
                                 <span class="option__radio-count">(5)</span>
                             </label>
 
-                            <label class="option__btn">
+                            <label class="option__btn"  id="horizontal01-2">
                                 <input
                                         type="checkbox"
                                         class="option__checkbox-real checkbox-real"
@@ -89,7 +89,7 @@
                                 <span class="option__radio-count">(5)</span>
                             </label>
 
-                            <label class="option__btn">
+                            <label class="option__btn"  id="horizontal01-3">
                                 <input
                                         type="checkbox"
                                         class="option__checkbox-real checkbox-real"
@@ -533,6 +533,7 @@
                                 <span class="option__radio-title">Шнековое</span>
                                 <span class="option__radio-count">(5)</span>
                             </label>
+
                             <label class="option__btn">
                                 <input
                                         type="checkbox"
