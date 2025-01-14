@@ -46,9 +46,15 @@ if (filterForm) {
         let newListItem = document.createElement('li');
         newListItem.textContent = text;
         newListItem.classList.add('filter__show-content-item');
+
+        let divEl = document.createElement('div');
+        divEl.classList.add('filter__show-content-item__btn-svg');
+        newListItem.appendChild(divEl);
+
         filterShowContentList.appendChild(newListItem);
         return newListItem;
     };
+
 
     if (horLabels) {
         horLabels.forEach(label => {
