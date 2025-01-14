@@ -67,6 +67,16 @@ if (filterForm) {
                     if (val) {
                         if (checks.checked) {
                             createElement(val.innerHTML);
+
+                            // удаление по нажатию на тайтлы
+                            let items = filterShowContentList.querySelectorAll('.filter__show-content-item');
+                            items.forEach(item => {
+                                item.addEventListener('click', () => {
+                                    item.remove();
+                                    let impCheck = label.querySelector('.checkbox-real:checked');
+                                    impCheck.checked = false;
+                                })
+                            })
                         } else {
                             let items = filterShowContentList.querySelectorAll('.filter__show-content-item');
                             items.forEach(item => {
