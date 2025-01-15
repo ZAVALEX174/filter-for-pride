@@ -17,30 +17,30 @@ if (filterForm) {
         });
     }
 
-    if (showMoreFilterBtn && hideFilterBtn && filterOverAutoBtn) {
-        showMoreFilterBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            filterHiddenSections.forEach(filterHiddenSection => filterHiddenSection.classList.remove('none'));
-            showMoreFilterBtn.classList.add('none');
-            hideFilterBtn.classList.remove('none');
-            filterOverAutoBtn.classList.remove('none');
-            filterScrollElem.classList.remove('filter-over-auto-scroll');
-        });
+    // if (showMoreFilterBtn && hideFilterBtn && filterOverAutoBtn) {
+    //     showMoreFilterBtn.addEventListener('click', (e) => {
+    //         e.preventDefault();
+    //         filterHiddenSections.forEach(filterHiddenSection => filterHiddenSection.classList.remove('none'));
+    //         showMoreFilterBtn.classList.add('none');
+    //         hideFilterBtn.classList.remove('none');
+    //         filterOverAutoBtn.classList.remove('none');
+    //         filterScrollElem.classList.remove('filter-over-auto-scroll');
+    //     });
 
-        hideFilterBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            filterHiddenSections.forEach(filterHiddenSection => filterHiddenSection.classList.add('none'));
-            showMoreFilterBtn.classList.remove('none');
-            hideFilterBtn.classList.add('none');
-            filterOverAutoBtn.classList.add('none');
-        });
+    //     hideFilterBtn.addEventListener('click', (e) => {
+    //         e.preventDefault();
+    //         filterHiddenSections.forEach(filterHiddenSection => filterHiddenSection.classList.add('none'));
+    //         showMoreFilterBtn.classList.remove('none');
+    //         hideFilterBtn.classList.add('none');
+    //         filterOverAutoBtn.classList.add('none');
+    //     });
 
-        filterOverAutoBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            filterScrollElem.classList.add('filter-over-auto-scroll');
-            filterOverAutoBtn.classList.add('none');
-        });
-    }
+    //     filterOverAutoBtn.addEventListener('click', (e) => {
+    //         e.preventDefault();
+    //         filterScrollElem.classList.add('filter-over-auto-scroll');
+    //         filterOverAutoBtn.classList.add('none');
+    //     });
+    // }
 
     const createElement = (text) => {
         let newListItem = document.createElement('li');
@@ -66,6 +66,12 @@ if (filterForm) {
                     if (val) {
                         if (checks.checked) {
                             createElement(val.innerHTML);
+
+                            // показ оставшихся фильтров
+                            filterHiddenSections.forEach(el => {
+                                el.classList.remove('none');
+                            });
+
 
                             // удаление по нажатию на тайтлы
                             let items = filterShowContentList.querySelectorAll('.filter__show-content-item');
