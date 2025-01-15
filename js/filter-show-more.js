@@ -234,4 +234,18 @@ if (filterForm) {
             item.remove();
         });
     })
+
+    // получаем количество пунктов в фильтре
+    const firstFilterHidden = document.getElementById('hide-filter-first');
+    let elementsfirstFilterHidden = firstFilterHidden.querySelectorAll('.option__btn');
+    console.log(elementsfirstFilterHidden.length);
+    const hideFilterFirstShowBtn = document.getElementById('hide-filter-first-show');
+    const hideFilterFirstHiddentn = document.getElementById('hide-filter-first-hidden');
+
+    if (elementsfirstFilterHidden.length < 5) {
+        console.log('Нас много');
+        hideFilterFirstShowBtn.classList.remove('none');
+        hideFilterFirstHiddentn.classList.remove('none');
+    }
+
 }
