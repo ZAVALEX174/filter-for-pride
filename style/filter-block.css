@@ -384,6 +384,9 @@
 
     .option {
       width: 100%;
+      max-height: 160px;
+      overflow: hidden;
+      border: 1px solid red;
 
       .option__row {
         display: flex;
@@ -544,6 +547,12 @@
   }
 }
 
+#not-hidden {
+  width: 100%;
+  max-height: 100%;
+  overflow: visible;
+  border: none;
+}
 .widget.widget-height .widget__body {
   max-height: 0;
   overflow: hidden;
@@ -781,7 +790,7 @@ input[type='number'] {
 }
 
 .filter-over-auto-scroll {
-  overflow-y: auto;
+  overflow-y: auto !important;
 }
 
 .filter-over-auto__btn {

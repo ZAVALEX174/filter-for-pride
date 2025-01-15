@@ -222,7 +222,7 @@
           <div class="widget widget-height__all-height">
             <div class="widget__body">
               <div class="filter-title widget__body-title">Применение</div>
-              <div class="option">
+              <div class="option" id="not-hidden">
                 <div class="option__row">
                   <label class="option__btn">
                     <input
@@ -504,13 +504,23 @@
                   Скрыть фильтр
                 </button>
                 <button
-                  class="btn filter-show-more__btn"
+                  class="btn filter-show-more__btn none"
                   id="hide-filter-first-show">
                   Показать все
-                  <svg class="svg-filter-show-more" width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.75 8.79053L11.5 14.5405L17.25 8.79053" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    
+                  <svg
+                    class="svg-filter-show-more"
+                    width="23"
+                    height="24"
+                    viewBox="0 0 23 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5.75 8.79053L11.5 14.5405L17.25 8.79053"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
                 </button>
               </div>
             </div>
@@ -532,7 +542,7 @@
                 </svg>
                 Типы бурения:
               </div>
-              <div class="option filter-scroll">
+              <div class="option filter-scroll" id="hide-second-first">
                 <div class="option__row">
                   <label class="option__btn">
                     <input
@@ -778,6 +788,32 @@
                     <span class="option__radio-count">(5)</span>
                   </label>
                 </div>
+              </div>
+              <div class="box-btns">
+                <button
+                  class="btn hide-filter__btn none"
+                  id="hide-filter-second-hidden">
+                  Скрыть фильтр
+                </button>
+                <button
+                  class="btn filter-show-more__btn none"
+                  id="hide-filter-second-show">
+                  Показать все
+                  <svg
+                    class="svg-filter-show-more"
+                    width="23"
+                    height="24"
+                    viewBox="0 0 23 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5.75 8.79053L11.5 14.5405L17.25 8.79053"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </button>
               </div>
             </div>
           </div>
