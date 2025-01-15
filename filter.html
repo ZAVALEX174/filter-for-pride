@@ -18,7 +18,8 @@
 <div class="filter-container">
     <div class="filter__header">
         <div class="filter-title filter__header-title">Подбор по параметрам</div>
-        <svg class="filter-form-title-close" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="filter-form-title-close" width="32" height="32" viewBox="0 0 32 32" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
             <path d="M24 8L8 24" stroke="#8E8E8E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M8 8L24 24" stroke="#8E8E8E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
@@ -30,16 +31,16 @@
         <div class="filter__show-content">
 
             <ul class="filter__show-content-list">
-<!--                <li class="filter__show-content-item">-->
-<!--                    Глубина бурения (max), м: от 50 до 1 000-->
+                <!--                <li class="filter__show-content-item">-->
+                <!--                    Глубина бурения (max), м: от 50 до 1 000-->
 
-<!--                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-<!--                        <path d="M24 8L8 24" stroke="#8E8E8E" stroke-width="3" stroke-linecap="round"-->
-<!--                              stroke-linejoin="round"/>-->
-<!--                        <path d="M8 8L24 24" stroke="#8E8E8E" stroke-width="3" stroke-linecap="round"-->
-<!--                              stroke-linejoin="round"/>-->
-<!--                    </svg>-->
-<!--                </li>-->
+                <!--                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+                <!--                        <path d="M24 8L8 24" stroke="#8E8E8E" stroke-width="3" stroke-linecap="round"-->
+                <!--                              stroke-linejoin="round"/>-->
+                <!--                        <path d="M8 8L24 24" stroke="#8E8E8E" stroke-width="3" stroke-linecap="round"-->
+                <!--                              stroke-linejoin="round"/>-->
+                <!--                    </svg>-->
+                <!--                </li>-->
             </ul>
 
             <div class="filter__show-content-item--counter">
@@ -68,10 +69,9 @@
                     <div class="option">
                         <div class="option__row" id="horizontal01">
                             <label class="option__btn" id="horizontal01-1">
-                                <input checked
-                                        type="checkbox"
-                                        class="option__checkbox-real checkbox-real"
-                                        name="option-01"/>
+                                <input type="checkbox"
+                                       class="option__checkbox-real checkbox-real"
+                                       name="option-01"/>
                                 <span class="option__radio-fake"> </span>
                                 <span class="option__radio-title option__radio-title_selected">
                                     Установки ГНБ
@@ -79,7 +79,7 @@
                                 <span class="option__radio-count">(5)</span>
                             </label>
 
-                            <label class="option__btn"  id="horizontal01-2">
+                            <label class="option__btn" id="horizontal01-2">
                                 <input
                                         type="checkbox"
                                         class="option__checkbox-real checkbox-real"
@@ -89,7 +89,7 @@
                                 <span class="option__radio-count">(5)</span>
                             </label>
 
-                            <label class="option__btn"  id="horizontal01-3">
+                            <label class="option__btn" id="horizontal01-3">
                                 <input
                                         type="checkbox"
                                         class="option__checkbox-real checkbox-real"
@@ -307,13 +307,15 @@
                     <div class="filters-price__inputs">
                         <label class="filters-price__label">
                             <span class="filters-price__text">от</span>
-                            <input type="number" min="1" max="2000" placeholder="1" class="filters-price__input"
+                            <input type="number" min="1" max="2000" placeholder="1" value="1"
+                                   class="filters-price__input"
                                    id="input-0">
 
                         </label>
                         <label class="filters-price__label">
                             <span class="filters-price__text">до</span>
-                            <input type="number" min="1" max="2000" placeholder="2000" class="filters-price__input"
+                            <input type="number" min="1" max="2000" placeholder="2000" value="2000"
+                                   class="filters-price__input"
                                    id="input-1">
 
                         </label>
@@ -340,13 +342,15 @@
                     <div class="filters-price__inputs">
                         <label class="filters-price__label">
                             <span class="filters-price__text">от</span>
-                            <input type="number" min="45" max="1000" placeholder="45" class="filters-price__input"
+                            <input type="number" min="45" max="1000" placeholder="45" value="45"
+                                   class="filters-price__input"
                                    id="input-2">
 
                         </label>
                         <label class="filters-price__label">
                             <span class="filters-price__text">до</span>
-                            <input type="number" min="45" max="1000" placeholder="1000" class="filters-price__input"
+                            <input type="number" min="45" max="1000" placeholder="1000" value="1000"
+                                   class="filters-price__input"
                                    id="input-3">
 
                         </label>
@@ -655,11 +659,16 @@
                     </div>
                 </div>
             </div>
+
+            <button class="btn filter-show-more__btn">Показать</button>
+            <button class="btn hide-filter__btn none">Скрыть фильтр</button>
+            <button class="btn filter-over-auto__btn none" id="r2">Показать все</button>
+
+            <button class="btn ready-filter__btn none">Готово</button>
+            <button type="reset" class="btn reset__btn none">Сбросить всё</button>
+
         </form>
     </div>
-    <button class="btn filter-show-more__btn">Показать</button>
-    <button class="btn hide-filter__btn none">Скрыть фильтр</button>
-    <button class="btn filter-over-auto__btn none">Показать все</button>
 
 </div>
 
